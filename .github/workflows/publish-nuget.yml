@@ -19,9 +19,9 @@ jobs:
           dotnet-version: 8.x
 
       - name: Make publish script executable
-        run: chmod +x ./build/publish-simulator-nuget.sh
+        run: chmod +x ./build/publish-nuget.sh
 
       - name: Run publish script
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
-        run: ./build/publish-simulator-nuget.sh
+        run: ./build/publish-nuget.sh
