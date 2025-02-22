@@ -9,7 +9,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <!-- <PackageIcon>logo.png</PackageIcon> -->
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <RepositoryUrl>https://github.com/SchlenkR/FsxWatcher</RepositoryUrl>
     <!-- <PackageLicenseUrl>https://github.com/CuminAndPotato/PXL-Clock/blob/main/LICENSE.md</PackageLicenseUrl> -->
     <!-- <PackageLicenseExpression>Proprietary</PackageLicenseExpression> -->
