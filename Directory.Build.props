@@ -1,0 +1,25 @@
+<Project>
+
+  <PropertyGroup>
+    <Version>0.0.1</Version>
+
+    <Authors>Ronald Schlenker</Authors>
+    <Copyright>Copyright 2025 Ronald Schlenker</Copyright>
+    <PackageTags>fsharp fsx</PackageTags>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <!-- <PackageIcon>logo.png</PackageIcon> -->
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <RepositoryUrl>https://github.com/SchlenkR/FsxWatcher</RepositoryUrl>
+    <!-- <PackageLicenseUrl>https://github.com/CuminAndPotato/PXL-Clock/blob/main/LICENSE.md</PackageLicenseUrl> -->
+    <!-- <PackageLicenseExpression>Proprietary</PackageLicenseExpression> -->
+
+    <PackageReleaseNotes>
+
+      0.0.1
+      - Initial release
+
+    </PackageReleaseNotes>
+  </PropertyGroup>
+
+</Project>

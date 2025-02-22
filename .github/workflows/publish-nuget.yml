@@ -1,0 +1,27 @@
+name: Publish to Nuget
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    defaults:
+      run:
+        working-directory: .
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup .NET 8
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.x
+
+      - name: Make publish script executable
+        run: chmod +x ./build/publish-simulator-nuget.sh
+
+      - name: Run publish script
+        env:
+          NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
+        run: ./build/publish-simulator-nuget.sh
