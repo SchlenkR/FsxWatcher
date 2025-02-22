@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
     <OutputType>Exe</OutputType>
   </PropertyGroup>
 
@@ -27,8 +27,11 @@
 
   <ItemGroup>
     <PackageReference Include="Argu" Version="6.2.5" />
-    <PackageReference Include="FSharp.Compiler.Service" Version="43.9.201" />
   </ItemGroup>
 
+  <ItemGroup >
+    <PackageReference Condition="'$(TargetFramework)' == 'net8.0'" Include="FSharp.Compiler.Service" Version="43.8.403" />
+    <PackageReference Condition="'$(TargetFramework)' == 'net9.0'" Include="FSharp.Compiler.Service" Version="43.9.201" />
+  </ItemGroup>
 
 </Project>
