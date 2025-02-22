@@ -4,8 +4,6 @@ open FSharp.Compiler.Interactive.Shell
 open System.Threading
 open Argu
 
-
-// Define the CLI arguments
 type Command =
     | [<CustomCommandLine("--watch-path")>] WatchPath of string
 
